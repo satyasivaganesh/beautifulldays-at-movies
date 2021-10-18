@@ -1,0 +1,8 @@
+def beautifulDays(i, j, k):
+    c=0
+    for l in range(i,j+1):
+        l=str(l)
+        x=l[::-1]
+        if abs(int(l)-int(x))%k==0:
+            c+=1
+    return c
